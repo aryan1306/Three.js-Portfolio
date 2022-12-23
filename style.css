@@ -1,80 +1,104 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
 canvas {
-	position: fixed;
-	top: 0;
-	left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 :root {
-	--dark-bg: rgba(15, 15, 15, 0.95);
-	--spacing: 350px;
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
 
-	font-family: brandon-grotesque, sans-serif;
-	font-weight: 400;
-	font-style: normal;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 main {
-	width: 100vw;
-	color: white;
-	z-index: 99;
-	position: absolute;
-	width: 100%;
-	margin: 0px auto;
-	padding: 120px 0px;
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
 
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 h1,
 h2,
 h3,
 blockquote {
-	font-family: elevon, sans-serif;
-	font-weight: 700;
-	font-style: normal;
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 canvas {
-	position: fixed;
-	top: 0;
-	left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 header {
-	background: var(--dark-bg);
-	grid-column: 2 / span 5;
-	font-size: 2.5rem;
-	padding: 2rem;
-	margin-bottom: var(--spacing);
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
 }
 
 section {
-	grid-column: 2 / 8;
-	padding: 1rem;
-	background: var(--dark-bg);
-	font-size: 1.25rem;
-	line-height: 1.5;
-	margin-bottom: var(--spacing);
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
 }
 
 blockquote {
-	margin: 0;
-	padding: 0;
-	grid-column: 2 / span 9;
-	margin-bottom: var(--spacing);
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
 }
 
 blockquote p {
-	color: black;
-	background-color: white;
-	font-size: 4rem;
-	display: inline;
-	line-height: 1;
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
 }
 
 .left {
-	grid-column: 6 / 12;
+  grid-column: 6 / 12;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+.icon {
+  font-size: 10em;
+}
+.mini-icon {
+  font-size: 2em;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+a {
+  color: white;
+}
+a:visited {
+  color: white;
 }
